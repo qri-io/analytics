@@ -8,7 +8,7 @@ import (
 // Analytics is the interface for collecting and storing
 // analytics events
 type Analytics interface {
-	Query(query.Query) (query.Result, error)
+	Query(query.Query) (query.Results, error)
 	Track(event string, props map[string]interface{}) error
 }
 
